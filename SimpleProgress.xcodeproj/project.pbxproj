@@ -15,6 +15,9 @@
 		6004FFC61C5F3241007BA0BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6004FFC41C5F3241007BA0BE /* LaunchScreen.storyboard */; };
 		6004FFD11C5F3242007BA0BE /* SimpleProgressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6004FFD01C5F3242007BA0BE /* SimpleProgressTests.m */; };
 		6004FFDC1C5F3242007BA0BE /* SimpleProgressUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6004FFDB1C5F3242007BA0BE /* SimpleProgressUITests.m */; };
+		6004FFF51C5F340D007BA0BE /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6004FFEE1C5F340D007BA0BE /* PopoverView.m */; };
+		6004FFF61C5F340D007BA0BE /* SHLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6004FFF21C5F340D007BA0BE /* SHLineGraphView.m */; };
+		6004FFF71C5F340D007BA0BE /* SHPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 6004FFF41C5F340D007BA0BE /* SHPlot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,15 @@
 		6004FFD71C5F3242007BA0BE /* SimpleProgressUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleProgressUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6004FFDB1C5F3242007BA0BE /* SimpleProgressUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleProgressUITests.m; sourceTree = "<group>"; };
 		6004FFDD1C5F3242007BA0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6004FFEB1C5F3380007BA0BE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6004FFED1C5F340D007BA0BE /* PopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView.h; sourceTree = "<group>"; };
+		6004FFEE1C5F340D007BA0BE /* PopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverView.m; sourceTree = "<group>"; };
+		6004FFEF1C5F340D007BA0BE /* PopoverView_Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView_Configuration.h; sourceTree = "<group>"; };
+		6004FFF01C5F340D007BA0BE /* PopoverViewCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverViewCompatibility.h; sourceTree = "<group>"; };
+		6004FFF11C5F340D007BA0BE /* SHLineGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLineGraphView.h; sourceTree = "<group>"; };
+		6004FFF21C5F340D007BA0BE /* SHLineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHLineGraphView.m; sourceTree = "<group>"; };
+		6004FFF31C5F340D007BA0BE /* SHPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPlot.h; sourceTree = "<group>"; };
+		6004FFF41C5F340D007BA0BE /* SHPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPlot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +113,12 @@
 		6004FFB51C5F3241007BA0BE /* SimpleProgress */ = {
 			isa = PBXGroup;
 			children = (
+				6004FFEC1C5F340D007BA0BE /* SHLineGraphView */,
 				6004FFB91C5F3241007BA0BE /* AppDelegate.h */,
 				6004FFBA1C5F3241007BA0BE /* AppDelegate.m */,
 				6004FFBC1C5F3241007BA0BE /* ViewController.h */,
 				6004FFBD1C5F3241007BA0BE /* ViewController.m */,
+				6004FFEB1C5F3380007BA0BE /* PrefixHeader.pch */,
 				6004FFBF1C5F3241007BA0BE /* Main.storyboard */,
 				6004FFC21C5F3241007BA0BE /* Assets.xcassets */,
 				6004FFC41C5F3241007BA0BE /* LaunchScreen.storyboard */,
@@ -138,6 +152,21 @@
 				6004FFDD1C5F3242007BA0BE /* Info.plist */,
 			);
 			path = SimpleProgressUITests;
+			sourceTree = "<group>";
+		};
+		6004FFEC1C5F340D007BA0BE /* SHLineGraphView */ = {
+			isa = PBXGroup;
+			children = (
+				6004FFED1C5F340D007BA0BE /* PopoverView.h */,
+				6004FFEE1C5F340D007BA0BE /* PopoverView.m */,
+				6004FFEF1C5F340D007BA0BE /* PopoverView_Configuration.h */,
+				6004FFF01C5F340D007BA0BE /* PopoverViewCompatibility.h */,
+				6004FFF11C5F340D007BA0BE /* SHLineGraphView.h */,
+				6004FFF21C5F340D007BA0BE /* SHLineGraphView.m */,
+				6004FFF31C5F340D007BA0BE /* SHPlot.h */,
+				6004FFF41C5F340D007BA0BE /* SHPlot.m */,
+			);
+			path = SHLineGraphView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +301,9 @@
 			files = (
 				6004FFBE1C5F3241007BA0BE /* ViewController.m in Sources */,
 				6004FFBB1C5F3241007BA0BE /* AppDelegate.m in Sources */,
+				6004FFF51C5F340D007BA0BE /* PopoverView.m in Sources */,
+				6004FFF71C5F340D007BA0BE /* SHPlot.m in Sources */,
+				6004FFF61C5F340D007BA0BE /* SHLineGraphView.m in Sources */,
 				6004FFB81C5F3241007BA0BE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SimpleProgress/PrefixHeader.pch";
 				INFOPLIST_FILE = SimpleProgress/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = apple.SimpleProgress;
@@ -422,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SimpleProgress/PrefixHeader.pch";
 				INFOPLIST_FILE = SimpleProgress/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = apple.SimpleProgress;
